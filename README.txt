@@ -1,20 +1,24 @@
-WILD WATERS - PROTOTIPO V1
+WILD WATERS - PROTOTIPO V2
 
-Questa è una prima PWA (app web installabile), non un APK Android nativo.
+Questa è una PWA installabile da Chrome, non un APK Android nativo.
 
-COME PROVARLA
-1. Pubblica questi file su un hosting HTTPS, ad esempio GitHub Pages.
-2. Apri l'indirizzo HTTPS con Chrome sul Samsung.
-3. Menu Chrome > Aggiungi a schermata Home / Installa app.
+AGGIORNAMENTO
+1. Prima di aggiornare, esporta un backup dall'app attuale.
+2. Carica i file di questa cartella nel repository/hosting sostituendo i file precedenti.
+3. Attendi la pubblicazione, poi chiudi e riapri Wild Waters; se necessario ricarica il sito.
+4. La versione usa lo stesso database IndexedDB "wildwaters-db" e aggiorna lo schema da versione 1 a 2 aggiungendo l'archivio uscite, senza cancellare lo store delle catture.
 
-FUNZIONI PRESENTI
-- Diario privato con salvataggio locale IndexedDB.
-- Registrazione specie, data, misure, fiume, località, mosca, tecnica, temperatura, note e più foto.
-- Copertina personalizzabile dalla galleria.
-- Archivio, conteggio catture/uscite e backup JSON dei dati (il backup non include le foto).
-- Cache iniziale per apertura offline dopo la prima visita online.
+NUOVE FUNZIONI
+- Apri ogni cattura toccando la voce nell'elenco.
+- Menu a tre puntini nella scheda per modificare o eliminare.
+- Aggiunta di foto alle catture; le foto già presenti restano associate.
+- Specie personalizzata quando si sceglie "Altra specie".
+- Menu a tre puntini sulla copertina Home per cambiare o ripristinare l'immagine.
+- Diario delle uscite con racconto, foto e collegamento delle catture.
+- Backup JSON completo di catture, uscite, foto e copertina; importazione in aggiunta.
 
-LIMITI
-- GPS, mappe offline, PDF, sincronizzazione cloud e funzioni community non sono ancora implementati.
-- Le foto e i dati restano nel browser/dispositivo. Non cancellare i dati del sito o la memoria del browser senza prima esportare il backup.
-- La copertina e le catture sono salvate localmente.
+NOTE
+- Le foto caricate sono conservate nel database locale del browser.
+- Il backup può diventare voluminoso se contiene molte fotografie.
+- GPS, mappe, PDF e sincronizzazione cloud non sono ancora implementati.
+- Non cancellare i dati del sito o la memoria del browser senza un backup.
